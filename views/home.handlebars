@@ -1,0 +1,49 @@
+<section id="slider_container">
+    
+    <article  id="slider">
+      <img src="/images/slider1.jpg" alt="img">
+      <img src="/images/slider2.jpg" alt="img">
+      <img src="/images/slider3.jpg" alt="img">
+      <img src="/images/slider4.jpg" alt="img">
+      <img src="/images/slider5.jpg" alt="img">
+      <img src="/images/slider1.jpg" alt="img">
+      <img src="/images/slider2.jpg" alt="img">
+    </article>
+    <aside class="label_slider">
+      <label for="" class="img1"></label><label for="" class="img2"></label><label for="" class="img3"></label><label for="" class="img4"></label><label for="" class="img5"></label>
+    </aside>
+    <aside class="arrow_slider">
+      <p class="left_slider"><i class="fa-solid fa-less-than"></i></p>
+      <p class="Right_slider"><i class="fa-solid fa-greater-than"></i></p> 
+</aside>
+</section>
+ 
+ <section id="all_movie_obj">
+<article id="filter_section">
+    {{#each list}}
+     <div>
+
+  <a href="{{_id}}"><img src="{{trimstring movie_img.0.path}}" alt="" srcset="">
+  </a>
+
+
+</div>
+    {{/each}}
+    {{#each allGetMvie}}
+ <div>
+
+<a href="{{_id}}"><img src="{{trimstring movie_img.0.path}}" alt="" srcset="">
+</a>
+
+
+</div>
+{{/each}}
+ </article>
+ 
+ 
+
+</section>
+
+ <p class="carusal_right"><i class="fa-solid fa-greater-than"></i></p> 
+ <p class="carusal_left"><i class="fa-solid fa-less-than"></i></p>
+      

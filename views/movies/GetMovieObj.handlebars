@@ -1,0 +1,28 @@
+<section id="all_movie_obj">
+<article id="filter_section">
+    {{#each list}}
+     <div>
+
+  <a href="{{_id}}"><img src="{{trimstring movie_img.0.path}}" alt="" srcset="">
+  </a>
+
+
+</div>
+    {{/each}}
+    {{#each allGetMvie}}
+ <div>
+
+<a href="{{_id}}"><img src="{{trimstring movie_img.0.path}}" alt="" srcset="">
+</a>
+
+
+</div>
+{{/each}}
+ </article>
+ 
+ 
+
+</section>
+
+ <p class="carusal_right"><i class="fa-solid fa-greater-than"></i></p> 
+ <p class="carusal_left"><i class="fa-solid fa-less-than"></i></p>

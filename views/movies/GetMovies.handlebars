@@ -1,0 +1,35 @@
+
+{{#each movie}}
+<section id="full_deatils_section">
+<article >
+    <figure>
+        <img src="{{trimstring movie_img.0.path}}" />
+    </figure>
+<aside>
+<div>
+    <h1>{{movie_title}}</h1>
+  <h1> {{movie_duration}} | {{ movie_language}} |  {{ movie_genre}} | {{ movie_year}} </h1>
+  <h1>{{ movie_certificate}} | {{ movie_category}}</h1>
+  <p>{{ movie_description}}</p>
+  <h1 id="Audio">Audio:{{movie_audio_lang}}</h1>
+  <div >
+    <button id="video_form">Watch</button>
+    <form action="/movies/delete/{{_id}}?_method=DELETE" method="post">
+     <input type="hidden" name="_method" value="DELETE">
+    <button>Delete</button>
+    </form> 
+  </div>
+  </div>
+  <div>
+    <figure>
+        <img src="{{trimstring movie_img.0.path}}" />
+    </figure>
+  </div>
+</aside>
+</article>
+</section>
+<section id="video_section">
+    <button id="X_button"><i class="fa-solid fa-x"></i></button>
+    <video src="{{trimstring movie_video.0.path}}" controls id="video_ind_tag"></video>
+</section>
+{{/each}}

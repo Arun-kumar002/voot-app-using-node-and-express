@@ -1,0 +1,50 @@
+<section class="add_movies">
+    <article>
+        <form action="/movies/update/{{updatemovie._id}}?_method=PUT" method="post"  enctype="multipart/form-data">
+         <input type="hidden" name="_method" value="PUT">
+            <div>
+                <label for="movie-1">movie title</label>
+                <input type="text" name="movie_title" id="movie-1" placeholder="movie_title" value="{{updatemovie.movie_title}}">
+            </div>
+            <div>
+                <label for="movie-2">movi duration</label>
+                <input type="text" name="movie_duration" id="movie-2" placeholder="movie_duration" value="{{updatemovie.movie_duration}}">
+            </div>
+            <div>
+                <label for="movie-3">movie language</label>
+                <input type="text" name="movie_language" id="movie-3" placeholder="movie_language" value="{{updatemovie.movie_language}}">
+            </div>
+            <div>
+                <label for="movie-4">movie genre....</label><input type="text" name="movie_genre" id="movie-4" placeholder="movie_genre" value="{{updatemovie.movie_genre}}">
+            </div>
+            <div>
+                <label for="movie-5">movie year...</label><input type="date" name="movie_year" id="movie-5" placeholder="movie_year" value="{{updatemovie.movie_year}}">
+            </div>
+            <div>
+                <label for="movie-6">movie certificate</label><input type="text" name="movie_certificate" id="movie-6" placeholder="movie_certificate" value="{{updatemovie.movie_certificate}}">
+            </div>
+            <div>
+                <label for="movie-7">movie category</label>
+                <input type="text" name="movie_category" id="movie-7" placeholder="movie_category" value="{{updatemovie.movie_category}}">
+            </div>
+            
+            <div>
+                <label for="movie-8">movie img</label><input type="file" name="movie_img" id="movie-9" placeholder="movie_img" >
+            </div>
+            <div>
+                <label for="movie-9">movie video</label><input type="file" name="movie_video" id="movie-10" placeholder="movie_video" >
+            </div>
+            <div>
+            <label for="movie-10">movie audio language</label>
+            <input type="text" name="movie_audio_lang" id="movie-8" placeholder="movie_audio_lang" value="{{updatemovie.movie_audio_lang}}">
+            </div>
+            <div>
+            <label for="movie-111">movie description</label>
+            <textarea name="movie_description"  cols="30" rows="5" placeholder="movie_description" id="movie-11"  >
+            </textarea>
+            </div>
+            <div><button>Update movies</button></div>
+
+        </form>
+    </article>
+</section>
